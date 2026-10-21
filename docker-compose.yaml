@@ -1,0 +1,7 @@
+services:
+  cleaner:
+    build: .
+    container_name: nyc-taxi-cleaner
+    volumes:
+      - ./:/app
+      - ./yellow_tripdata_2021-01.csv.gz:/data/yellow_tripdata_2021-01.csv.gz:ro
